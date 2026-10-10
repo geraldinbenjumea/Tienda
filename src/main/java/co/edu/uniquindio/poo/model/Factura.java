@@ -54,4 +54,9 @@ public record Factura(String codigo, LocalDate fecha, double total, EstadoFactur
         return resultado ;
     }
 
+    public boolean compraIphone() {
+        boolean resultado = false;
+        resultado= cliente.compraIphone();
+        return resultado;
+    }
 }
