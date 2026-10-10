@@ -7,10 +7,10 @@ import java.util.List;
 public class Cliente {
 
     private final String documentoIdentidad;
-    private  String nombreCompleto;
-    private  String telefono;
+    private String nombreCompleto;
+    private String telefono;
     private final String ciudadResidencia;
-    private  String correo;
+    private String correo;
     private List<Factura> listaFacturas;
     private final Tienda ownedByTienda;
 
@@ -22,8 +22,8 @@ public class Cliente {
         this.telefono = telefono;
         this.ciudadResidencia = ciudadResidencia;
         this.correo = correo;
-        this.ownedByTienda= ownedByTienda;
-        this.listaFacturas=new ArrayList<>();
+        this.ownedByTienda = ownedByTienda;
+        this.listaFacturas = new ArrayList<>();
     }
 
     public String getDocumentoIdentidad() {
@@ -71,4 +71,16 @@ public class Cliente {
         return nombreCompleto.startsWith("R");
     }
 
+    public boolean compraIphone() {
+        return Categoria.CELULARES;
+    }
+
+    public boolean nombreJuan() {
+        boolean nombre=false;
+        if (nombreCompleto.equals("Juan")){
+            nombre=true;
+            return nombre;
+        }
+        return nombre;
+    }
 }

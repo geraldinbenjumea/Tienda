@@ -144,6 +144,17 @@ public class Tienda {
 
     //punto 6:   Obtener las facturas que tenga un cliente
     // donde su nombre sea juan y haya comprado un celular de marca Iphone 16 pro max
+    public ArrayList<Factura> facturasClienteJuan(){
+        ArrayList<Factura> resultado = new ArrayList<>();
+        ArrayList<Cliente> cliente = listaClientes;
+        for(Cliente cliente1 : listaClientes) {
+            for (Factura factura : listaFacturas) {
+                if (factura.compraIphone() && cliente.getFirst().nombreJuan())
+                    resultado.add(factura);
+            }
+        }
+        return resultado;
+    }
 
 
     // Punto 7: Implementar un método que reciba una categoría
