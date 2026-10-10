@@ -13,8 +13,9 @@ public class Main {
 
         Tienda tienda = new Tienda("Tienda UQ","34567","7430000");
 
-        Cliente c1 = new Cliente("1094","Juan perez",tienda,
-                "31253664","juan@gamiel.com","Armenia");
+        Cliente c1 = new Cliente("1094","Juan perez","31253664",
+                "Armenia","juan@gamiel.com",tienda);
+
 
         String mensajeResultado = tienda.registrarCliente(c1);
 
@@ -27,8 +28,6 @@ public class Main {
         }else{
             JOptionPane.showMessageDialog(null,"El cliente no existe en la tienda");
         }
-
-        String clienteActualizado= tienda.actualizarCliente(c1);
 
 
 
