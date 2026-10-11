@@ -72,7 +72,11 @@ public class Cliente {
     }
 
     public boolean compraIphone() {
-        return Categoria.CELULARES;
+        boolean compra=false;
+        if(Categoria.values().equals("celulares")){
+            compra=true;
+        }
+        return compra;
     }
 
     public boolean nombreJuan() {
