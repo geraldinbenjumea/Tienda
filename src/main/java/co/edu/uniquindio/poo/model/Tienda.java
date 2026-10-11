@@ -82,9 +82,8 @@ public class Tienda {
 
 
     //    ----- TALLER -----
-
     //1. Obtener todos los productos con cantidad disponible mayor a 10
-    public List<Producto> obtenerProductosCantidadMayor() {
+    public List<Producto> obtenerProductosCantidadMayor10() {
         List<Producto> productosFiltrados = new ArrayList<>();
         for (Producto producto : listaProductos.values()) {
             if (producto.getCantidadDisponible() >= 10) {
@@ -93,6 +92,7 @@ public class Tienda {
         }
         return productosFiltrados;
     }
+
 
 
     //2. obtener lista de codigos>=10 y <50
