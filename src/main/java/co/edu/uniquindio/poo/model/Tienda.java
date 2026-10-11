@@ -113,14 +113,12 @@ public class Tienda {
             }
         }
         return listaClientes;
-        
+
     }
 
     //4.Obener nombres que empiecen con R
-
     public ArrayList<Factura> obtenerFacturasClienteConR() {
         ArrayList<Factura> resultado = new ArrayList<>();
-
         for (Factura factura : listaFacturas) {
             if (factura.tieneClienteConR()) {
                 resultado.add(factura);
@@ -128,6 +126,7 @@ public class Tienda {
         }
         return resultado;
     }
+    
 
     //punto 5:   Obtener las facturas donde se haya comprado un celular de marca Iphone 16 pro max
     public ArrayList<Factura> obtenerFacturasIphone() {
