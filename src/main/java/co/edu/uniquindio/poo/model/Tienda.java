@@ -209,6 +209,15 @@ public class Tienda {
     //Punto 11: Implementar un método que reciba el nombre de una ciudad y retorne
     // todos los clientes que residan en ella.
     // La búsqueda debe realizarse sin diferenciar entre mayúsculas y minúsculas.
+    public List<Cliente> clientesCiudad(String ciudadResidencia){
+        List <Cliente> resultado= new ArrayList<>();
+        for (Cliente c: listaClientes){
+            if(c.getCiudadResidencia().equalsIgnoreCase(ciudadResidencia)){
+                resultado.add(c);
+            }
+        }
+        return resultado;
+    }
 
 
 }
