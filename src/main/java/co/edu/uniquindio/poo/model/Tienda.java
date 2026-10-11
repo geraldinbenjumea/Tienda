@@ -93,10 +93,8 @@ public class Tienda {
         return productosFiltrados;
     }
 
-
-
     //2. obtener lista de codigos>=10 y <50
-    public List<String> obtenerCodigos() {
+    public List<String> obtenerCodigos () {
         List<String> resultado = new ArrayList<>();
         for (String codigo : listaProductos.keySet()) {
             Producto producto = listaProductos.get(codigo);
