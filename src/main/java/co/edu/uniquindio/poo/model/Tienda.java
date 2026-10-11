@@ -104,7 +104,6 @@ public class Tienda {
         }
         return resultado;
     }
-
     //3. obtener la lista de clientes que hayan comprado el 7 de octubre 2026
     public ArrayList<Cliente> obtenerClientesCompras2(LocalDate fechaConsulta) {
         ArrayList<Cliente> listaClientes = new ArrayList<>();
@@ -114,6 +113,7 @@ public class Tienda {
             }
         }
         return listaClientes;
+        
     }
 
     //4.Obener nombres que empiecen con R
